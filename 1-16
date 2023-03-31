@@ -1,0 +1,302 @@
+1 - /*Escreva um programa que mostre na tela a mensagem "Olá, Mundo!" */
+programa {
+  funcao inicio() {
+    escreva("Olá, Mundo!")
+  }
+}
+
+2 - /*Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas para ela:
+Ex: 
+Qual é o seu nome? João da Silva
+Olá João da Silva, é um prazer te conhecer! 
+*/
+programa {
+  funcao inicio() {
+    var cadeia nome
+    escreva("Informe seu nome: ")
+    leia(nome)
+    escreva("Olá ",nome,", é um prazer te conhecer!")
+  }
+}
+
+3 - /*Crie um programa que leia o nome e o salário de um funcionário, mostrando no
+final uma mensagem.
+Ex:
+Nome do Funcionário: Maria do Carmo
+Salário: 1850,45 O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho. 
+*/
+programa {
+  funcao inicio() {
+   cadeia nome, mes
+   real salario
+   
+  escreva("Informe seu nome: ")
+  leia(nome)
+  escreva("Informe seu salário: ")
+  leia(salario)
+  escreva("Informe o mês atual: ")
+  leia(mes)
+
+  escreva("Nome do funcionário: ",nome)
+  escreva("\nSalário: R$",salario," O funcionário ",nome," tem um salário de R$",salario," no mês de ",mes,".")
+  
+  }
+}
+
+4 - /*  Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório
+entre eles.
+Ex: 
+Digite um valor: 8
+Digite outro valor: 5
+A soma entre 8 e 5 é igual a 13. */
+programa{
+  funcao inicio(){
+    inteiro valor1, valor2, soma
+    escreva("Informe o primeiro valor: ")
+    leia(valor1)
+    escreva("Informe o segundo valor: ")
+    leia(valor2)
+
+    soma= valor1 + valor2
+
+    escreva("A soma entre ",valor1," e ",valor2," é ", soma,)
+
+  }
+}
+
+5 - /*Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
+na tela a sua média na disciplina.
+Ex: 
+Nota 1: 4.5
+Nota 2: 8.5
+A média entre 4.5 e 8.5 é igual a 6.5 
+
+*/
+programa {
+  funcao inicio() {
+    real nota1, nota2, media
+
+    escreva("Informe sua primeira nota: ")
+    leia(nota1)
+    escreva("Informe sua segunda nota: ")
+    leia(nota2)
+
+    media= (nota1+nota2)/2
+    escreva("A média entre ",nota1," e ",nota2," é igual a: ",media)
+  
+  }
+}
+
+6 - /* Faça um programa que leia um número inteiro e mostre o seu antecessor e seu
+sucessor.
+Ex:
+Digite um número: 9
+O antecessor de 9 é 8
+O sucessor de 9 é 10 
+   */
+programa{
+  funcao inicio(){
+    inteiro a, b, c
+    escreva("Informe um número: ")
+    leia(a)
+      b=a + 1
+      c=a - 1
+    escreva("O antecessor de ",a, " é ",c)
+    escreva("\nO sucessor de ",a, " é ",b)
+    
+  }
+}
+
+7 - /*Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a
+sua terça parte.
+Ex: 
+Digite um número: 3.5
+O dobro de 3.5 é 7.0
+A terça parte de 3.5 é 1.16666
+*/
+programa {
+  funcao inicio() {
+    real num, dobro, parte
+
+    escreva("Informe o número escolhido: ")
+    leia(num)
+  
+    dobro=2 * num
+    parte=num/3
+    
+    escreva("O dobro de ",num," é ",dobro)
+    escreva("\n A terça parte de ",num," é ",parte)
+
+  }
+}
+
+8 - /* Desenvolva um programa que leia uma distância em metros e mostre os valores
+relativos em outras medidas.
+Ex:Digite uma distância em metros: 185.72
+A distância de 85.7m corresponde a:
+   */
+programa{
+  funcao inicio(){
+    real metros, cm, km, dm, hm, dam, mm
+        escreva("Informe a distância escolhida em metros: ")
+        leia(metros)
+      dm=metros*10
+      cm=dm*10
+      dam=metros*10
+      hm=metros*20
+      km=metros*30
+      mm=cm/10
+
+      escreva("A distância de ",metros,"m corresponde a: ")
+      escreva("\n",km,"km")
+      escreva("\n",hm,"hm")
+      escreva("\n",dam,"dam")
+      escreva("\n",dm,"dm")
+      escreva("\n",cm,"cm")
+      escreva("\n",mm,"mm")
+    
+    
+  }
+}
+
+9 - /*Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$)
+e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45. 
+*/
+programa {
+  funcao inicio() {
+    real saldo, dol 
+    escreva("Informe seu saldo: ")
+    leia(saldo)
+    dol=saldo*3.45
+
+    escreva("Você possui R$",saldo," na carteira e pode comprar US$",dol," com o saldo disponível")
+    
+
+  }
+}
+
+10 - /*Faça um algoritmo que leia a largura e altura de uma parede, calcule e
+mostre a área a ser pintada e a quantidade de tinta necessária para o serviço,
+sabendo que cada litro de tinta pinta uma área de 2metros quadrados. 
+   */
+programa{
+  funcao inicio(){
+     real largura, altura, area, tinta
+     escreva("Informe a largura da parade em metros: ")
+     leia(largura)
+     escreva("Informe a altura da parede em metros: ")
+     leia(altura)
+
+     area=largura*altura
+
+     tinta=area/2
+
+     escreva("A área a ser pintada será de: ",area," sendo necessário ",tinta," litros de tinta para pintar o cômodo por completo")
+    
+    
+  }
+}
+
+11 - /*Desenvolva uma lógica que leia os valores de A, B e C de uma equação do
+segundo grau e mostre o valor de Delta.
+*/
+programa {
+  funcao inicio() {
+  inteiro vala, valb, valorc, delta
+    escreva("Informe o valor de A: ")
+    leia(vala)
+    escreva("Informe o valor de B: ")
+    leia(valb)
+    escreva("Informe o valor de C: ")
+    leia(valorc)
+
+    delta=(valb^2)-(4*vala*valorc)
+
+    escreva("O valor de Delta é: ",delta)
+  }
+}
+ 
+12 - /*Crie um programa que leia o preço de um produto, calcule e mostre o seu
+PREÇO PROMOCIONAL, com 5% de desconto. 
+ */
+programa {
+  funcao inicio() {
+  real preco, promo, valor
+  escreva("Informe o valor do prooduto: ")
+  leia(preco)
+
+  promo=preco*0.05
+  valor=preco - promo
+  escreva("O valor com desconto será de R$",valor,)
+  }
+}
+ 
+13 - /*Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+seu novo salário, com 15% de aumento. 
+ */
+programa {
+  funcao inicio() {
+  real salario, aumento, final
+  escreva("Informe o valor do prooduto: ")
+  leia(salario)
+
+  aumento=salario*0.15
+  final=salario + aumento
+  escreva("Seu novo salário será de: ",final," reais")
+  }
+}
+ 
+14 - /*A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva
+um programa que pergunte a quantidade de Km percorridos por um carro alugado e a
+quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar,
+sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado. 
+ */
+programa {
+  funcao inicio() {
+  real km, total
+  inteiro dias
+    escreva("Informe a quantidade de km percorridos: ")
+    leia(km)
+    escreva("Informe a quantidade de dias que o carro foi alugado: ")
+    leia(dias)
+    total=(dias*90) + (km*0.20)
+    escreva("O valor final será de R$",total)
+  }
+}
+ 
+15 - /*Crie um programa que leia o número de dias trabalhados em um mês e mostre o
+salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25
+por hora trabalhada.  
+ */
+programa {
+  funcao inicio() {
+  real dias, salario
+    escreva("Informe o número de dias trabalhados: ")
+    leia(dias)
+    salario=(8*25) *dias
+    escreva("Seu salário será de R$",salario)
+  }
+}
+  
+16 - /*[DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um
+fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele
+já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule
+quantos dias de vida um fumante perderá e exiba o total em dias. 
+ */
+programa {
+  funcao inicio() {
+  inteiro cdias, anos, tempo, totaldias, horas
+
+  escreva("Quantos cigarros você fuma por dia: ")
+  leia(cdias)
+  escreva("Informe a quantos anos você fuma: ")
+  leia(anos)
+   
+   totaldias=anos*365
+   tempo=10*(cdias*totaldias)
+   horas=tempo/60
+
+   escreva("O tempo total perdido será de: ",horas," dias")
+
+  }
+}
